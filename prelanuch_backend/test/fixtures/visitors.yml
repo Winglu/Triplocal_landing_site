@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  email: MyString
+  code: MyString
+  invite_code: MyString
+  shares: 1
+
+two:
+  email: MyString
+  code: MyString
+  invite_code: MyString
+  shares: 1

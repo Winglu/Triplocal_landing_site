@@ -1,0 +1,132 @@
+<link rel="stylesheet" href="../styles/index.css">
+<script type="text/javascript">
+	//alert("aa");
+	$( document ).ready(function() {
+
+		$("#nav").fadeOut();
+
+	});
+
+	$(window).scroll(function(){
+		//alert("aa");
+		var top = $(this).scrollTop();
+		if(top>480){
+			$("#nav").fadeIn();
+		}else
+		{
+			$("#nav").fadeOut();
+		}
+	});
+</script>
+<div id="StayFocusd-infobar" style="display:none;">
+    <img src="chrome-extension://laankejkbhbdhmipfmgcngdelahlfoji/common/img/eye_19x19_red.png">
+    <span id="StayFocusd-infobar-msg"></span>
+    <span id="StayFocusd-infobar-links">
+        <a id="StayFocusd-infobar-never-show">hide forever</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+        <a id="StayFocusd-infobar-hide">hide once</a>
+    </span>
+</div>
+    <div id="nav" class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand"><img src="images/Logo.png" width="117" height="40"></a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <form class="navbar-form navbar-right" role="form">
+            <div class="form-group">
+              {{input type="text" value=search placeholder="Your Email Address" class="form-control"}}
+            </div>
+            <button {{action "saveToServer"}} class="btn btn-primary">Get Early Access</button>
+          </form>
+        </div><!--/.navbar-collapse -->
+      </div>
+    </div>
+<div class="jumbotron">
+      <div class="container">
+      <img src="images/Logo.png" width="294" height="101" alt="Tripalocal">
+        <h1>Connecting travellers with locals </br> Experience the local lifestyle</h1>
+        <p>Sign up now to get early access to our initial launch</p>
+        <p>
+        	
+        	{{input placeholder="Please input your email addressa" id="email" type="email" value=search action="saveToServer" class="input-lg" size="30" }}
+        	&nbsp;
+        	<a class="btn btn-primary btn-lg" role="button"{{action "saveToServer"}}>Get Early Access</a>
+        </p>
+        <div class="alert alert-warning" id="emailAlert" style="visibility: hidden;">
+    		
+			
+		</div>
+
+      </div>
+      
+</div>
+
+<div class="exp-tease">
+	<div class="container">
+		<h1>Step into the shoes of locals</h1>
+		<p>Discover their world</p>
+	  <!-- Example row of columns -->
+	  	<div class="prelaunch-tease">
+	    <div class="tease">        	
+	    	<div class="profile"><img src="images/rowena.png">
+	    	</div>
+	      	<p><strong>Rowena G.</strong><br /><em>Fashion Editor</em></p>
+	      	<p class="teasebox" style="background-image:url(images/fashion.jpg);">Spend 3 hours with Rowena and discover her favourite independent shopping locations in Sydney</p>
+	    </div>
+	    <div class="tease">        	
+	    	<div class="profile"><img src="images/stephB.jpg"></div>
+	      	<p><strong>Stephen B.</strong><br /><em>Street Photographer</em></p>
+	      	<p class="teasebox" style="background-image:url(images/streetart.jpg);">Step into Melbourne's hidden laneways for 2 hours with Stephen and see Australia's cultural capital from the eyes of street photographer</p>
+	    </div>
+	    <div class="tease">        	
+	    	<div class="profile"><img src="images/nancyZ.jpg"></div>
+	      	<p><strong>Nancy Z.</strong><br /><em>Foodie</em></p>
+	      	<p class="teasebox" style="background-image:url(images/food.jpg);">Cook a meal with Nancy and experience home dining in the suburbs of Brisbane</p>
+	    </div>
+	    
+	  </div>
+	</div>
+ </div>
+<div class="book-tease">
+ 	<div class="container">
+    	<h1>Get rewarded for your local insights</h1>
+    	<p>Host your own experiences when you want with a reward you decide. <br />Be a true entrepreneur.</p>
+    	<img src="images/bookTease.png" width="628" height="424">
+    </div>
+</div>
+<div class="footer">
+    <div class="container">
+    	<h1>See it, feel it, experience it<br />like a local</h1>
+    	<img src="images/Logo.png" width="294" height="101" alt="Tripalocal">
+        <p>
+        	<a href="mailto:enquiries@tripalocal.com">enquiries@tripalocal.com<br />
+        	</a>COPYRIGHT © TRIPALOCAL 2014 | DISCLAIMER
+        </p>
+        <p>
+	        <a href="https://twitter.com/share"  class="btn btn-default btn-lg" role="button" id="twitter">
+	        	<span>
+	        		
+	        	</span>
+	        </a>
+	        <a href="https://www.facebook.com/sharer/sharer.php?u=example.org" class="btn btn-default btn-lg" role="button" id="facebook">
+	        	<span>
+	        		
+	        	</span>
+	        </a>
+	        
+	        <a class="btn btn-default btn-lg" role="button" id="linkedin">
+	        	<span>	
+	        		
+	        		
+	        	</span>
+	        </a>        
+        </p>
+      </div>
+</div>
+

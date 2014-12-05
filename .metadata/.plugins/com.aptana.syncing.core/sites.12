@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sites>
+<site>
+<name>New Connection</name>
+<source>workspace:/frontend</source>
+<destination>workspace:/frontend</destination>
+</site>
+<site>
+<name>New Connection 2</name>
+<source>workspace:/frontend</source>
+<destination>workspace:/frontend</destination>
+</site>
+<site>
+<name>New Connection 3</name>
+<source>workspace:/frontend</source>
+<destination>file:/C:/Users/luis/Web%20Essentials</destination>
+</site>
+</sites>

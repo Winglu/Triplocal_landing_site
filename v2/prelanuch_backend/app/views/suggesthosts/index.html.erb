@@ -1,0 +1,27 @@
+<h1>Listing suggesthosts</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Email</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @suggesthosts.each do |suggesthost| %>
+      <tr>
+        <td><%= suggesthost.name %></td>
+        <td><%= suggesthost.email %></td>
+        <td><%= link_to 'Show', suggesthost %></td>
+        <td><%= link_to 'Edit', edit_suggesthost_path(suggesthost) %></td>
+        <td><%= link_to 'Destroy', suggesthost, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Suggesthost', new_suggesthost_path %>

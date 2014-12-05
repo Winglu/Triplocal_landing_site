@@ -1,0 +1,1 @@
+PrelanuchClient.ApplicationAdapter = DS.FixtureAdapter;

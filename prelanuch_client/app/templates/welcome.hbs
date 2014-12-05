@@ -1,0 +1,157 @@
+<link href='http://fonts.googleapis.com/css?family=Cutive' rel='stylesheet' type='text/css'>
+
+
+<link rel="stylesheet" href="../styles/welcome.css">
+
+<div id="StayFocusd-infobar" style="display:none;">
+    <img src="chrome-extension://laankejkbhbdhmipfmgcngdelahlfoji/common/img/eye_19x19_red.png">
+    <span id="StayFocusd-infobar-msg"></span>
+    <span id="StayFocusd-infobar-links">
+        <a id="StayFocusd-infobar-never-show">hide forever</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+        <a id="StayFocusd-infobar-hide">hide once</a>
+    </span>
+</div>
+
+<!-- Main jumbotron for a primary marketing message or call to action -->
+<div class="priority">
+  <div class="container">
+  <img src="images/Logo.png" width="294" height="101" alt="Tripalocal">
+    <h1>Interested in priority access?</h1>
+    <p>Get earlier access by referring your friends. The more</br> friends that join, the sooner you'll get access to experiences like <a href="#">these ones</a>.</p>
+    <p><a href="https://twitter.com/share" class="btn btn-primary btn-lg" role="button" id="twitter"><span></span>Tweet</a>&nbsp;
+    <a href="https://www.facebook.com/sharer/sharer.php?u=example.org" class="btn btn-primary btn-lg" role="button" id="facebook"><span></span>Share</a>&nbsp;
+    <a class="btn btn-primary btn-lg" role="button" id="email"><span></span>Email</a>&nbsp;
+    <a class="btn btn-primary btn-lg" role="button" id="linkedin"><span></span>Share</a></p>
+    <p>Or share this unique promo link:</p>
+    <div class="copy">{{fetchUniqueLink}}</div>
+  </div>
+</div>
+<div class="hostform">
+	<div class="container">
+		<ul  class="nav nav-tabs" style="width:820px; margin: 18px auto; margin-top: 0px;margin-bottom: 0px">
+   			<li class="active"><a href="#suggest" data-toggle="tab" class="active"><span>Suggest a Host</span></a></li>
+   			<li><a href="#become" data-toggle="tab" ><span>Become a Host</span></a></li>
+		</ul>
+		<div class="tab-content" style="width:820px; margin: 18px auto;margin-top: 0px">
+			<div class="tab-pane fade in active" style="background-color:#FFF; width:820px; margin: 18px auto; margin-top: 0px; padding:60px 35px;" id="suggest">
+				
+			<div class="leftColumn"><h2>Help a friend,</br>Get a free featured local experience</h2><img src="images/featureReward.png" width="281" height="93"></div>
+    		<div class="rightColumn"><p>If you suggested local host is chosen as one of our featured local host, you get a double pass to a top local experience of your choice, and your suggested host will receive special marketing effort from us as one of the privileges of a featured local host.</p>
+    			<div id="sHostC">
+    				<p><input class="input-lg" name="name0" type="text" value="Name" size="10">&nbsp;<input class="input-lg" name="email0" type="text" value="Email" size="25"></p>
+    				<p><input class="input-lg" name="name1" type="text" value="Name" size="10">&nbsp;<input class="input-lg" name="email1" type="text" value="Email" size="25"></p>
+    				<p><input class="input-lg" name="name2" type="text" value="Name" size="10">&nbsp;<input class="input-lg" name="email2" type="text" value="Email" size="25"></p>
+    			</div>
+    			<p><a class="btn btn-default btn-lg" role="button" {{action "addAHost"}}>+</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="btn btn-default btn-lg" role="button" {{action "removeAHost"}}>-</a></p>
+    			<p><a class="btn btn-primary btn-lg" role="button"{{action saveSuggest}}>Submit</a></p>
+    		</div>
+	
+				
+        <div style="clear: both;">
+        </div>
+			<!--
+				<label for="sName">Name</label>
+				{{input id="sName" type="text" value=sName }}
+				<div>
+					<span id="infoName">
+						
+					</span>
+				</div>
+				<br>
+				<label for="sEmail">Email</label>
+				{{input id="sEmail" type="text" value=sEmail }}
+				<div>
+					<span id="infoEmail">	
+					</span>
+				</div>
+				<button {{action "saveSuggest"}} {{bind-attr disabled=disabled}} >
+	    			SUBMIT
+	    		</button>
+	    	-->
+			 </div>
+	 		 <div class="tab-pane fade" style="background-color:#FFF; width:820px; height: 1300px; margin: 18px auto; margin-top: 0px; padding:60px 35px;" id="become">
+	 		 		
+	 		 			<h1>Share you passion and local expertise.<br />
+						Be yourself and be rewarded.
+						</h1>
+						<p>&nbsp;</p>
+						<p>&nbsp;</p>
+	 		 		
+					
+					<div style="width:300px;float: left;">
+						<img src="images/featureHosts.png" width="263" height="93" />
+						<p>&nbsp;</p>
+						<p>
+							Tripalocal offers an opportunity for you to show off your city and your favourite experiences, 
+							set your own prices and be rewarded. Increase your chances of becoming one of our featured local hosts
+							 by getting more friends signed up or add unique factors to your experiences. Here are 
+							 <a href="#">some ideas</a> for your inspiration. You can even go on one of these tours to try it out for yourself.
+						</p>
+					</div>
+					<div style="width:360px;float: left;">
+		    			<table><tr>
+		    			<td>
+		    				<p>First Name
+		    				{{input class="input-lg" size="15" id = "bFName" type = "text" value = bFName}}
+		    				</p>
+		    			</td>
+		    			<td>
+		    				<p>Last Name
+		    					{{input class="input-lg" size="15" id = "bLName" type = "text" value = bLName}}
+		    				</p>
+		    			</td>
+		    			</tr>
+		    			</table>
+		    			<p>Location
+		    				{{input class="input-lg" size="43" id = "bLocation" type = "text" value = bLocation}}<br>
+		    				</p>
+		    			<p>Title of the experience you are offering
+		    				{{input class="input-lg" size="43" id = "bTitle" type = "text" value = bTitle}}
+		    				
+		    			<p>Please write a sample experience under 500 words
+		    			<span class="helptext">Some questions to get you started:
+							<br />- Are you taking visitors to places?
+							<br />- Or are you hosting an event at a set location?
+							<br />- Do you have specific taste in the type of experience - you provide? How would you do it differently from other hosts?
+							<br />- Is there a lot of walking involved?
+							<br />- Is there extra cost involved in this experience? If so, are they optional?</span>
+							{{textarea class="input-lg" cols="45" rows="10" id = "bDes" type = "text" value = bDes}}
+		    			</p>
+		    			<p>Length of the tour<input class="input-lg" name="" type="text" value="" size="43"></p>
+		    			<p>Price Per Person (AU$)<input class="input-lg" name="" type="text" value="" size="43"></p>
+		    			<p>Personal Bio
+		    				<span class="helptext">
+		    					The best way to attract like-minded people is to show off 
+								your personality, please write a short bio under 500 words
+							</span>
+							{{textarea class="input-lg" cols="45" rows="10" id = "bPer" type = "text" value = bPer}}
+						</p>
+		    			<p><a class="btn btn-primary btn-lg" role="button" {{action becomeHost}}>Submit</a></p>
+		    		</div>
+			 </div>
+		</div>
+	</div>
+</div>
+<div class="footer">
+    <div class="container">
+    <h1>See it, feel it, experience it</br>like a local</h1>
+    <img src="images/Logo.png" width="294" height="101" alt="Tripalocal">
+        <p><a href="mailto:enquiries@tripalocal.com">enquiries@tripalocal.com</br>
+        </a>COPYRIGHT © TRIPALOCAL 2014 | DISCLAIMER</p>
+        <p>
+	        <a href="https://twitter.com/share"  class="btn btn-default btn-lg" role="button" id="twitter">
+	        	<span>
+	        	</span>
+	        </a>
+	        <a href="https://www.facebook.com/sharer/sharer.php?u=example.org" class="btn btn-default btn-lg" role="button" id="facebook">
+	        	<span>
+	        	</span>
+	        </a>
+	        <a class="btn btn-default btn-lg" role="button" id="linkedin">
+	        	<span>	
+	        	</span>
+	        </a>        
+        </p>
+        </div>
+  </div>
+

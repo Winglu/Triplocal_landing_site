@@ -1,0 +1,78 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* Move down content because we have a fixed navbar that is 50px tall */
+h1{font-family:Cutive; line-height:1.3; font-size:32px; color:#3cc;}
+h2{font-family:Cutive; line-height:1.3; font-size:24px; color:#3cc; margin-top:0px;}
+body{background-color:#f7f7f7;}
+.container {text-align: center; width:100%;}
+.btn-primary {background-color: #3cc;border-color: #399;}
+.btn-primary:hover {background-color: #399;border-color: #399;}
+a {color:#6CC;} a:hover{color:#699;}
+.copy{background-color:#f4f2ea; display:block; margin:auto; padding:10px; border-radius: 5px; -moz-box-shadow:inset 0 0 10px #999;-webkit-box-shadow: inset 0 0 10px #999;   box-shadow:inset 0 0 10px #999;}
+.leftColumn{float:left;}
+.rightColumn{text-align:left; float:right;}
+.input-lg{border:#CCC solid 1px; height:40px; font-size:14px;}
+.helptext{font-size:12px; color:#999; display:block; margin-bottom:3px;}
+
+.navbar-inverse {background-color: #fff;border-color: #CCC;}
+.navbar {min-height: 60px; vertical-align: middle;}
+.navbar-right {padding-top: 7px;}
+
+
+.jumbotron { background-image:url(../images/beijing.jpg); background-repeat:no-repeat; background-size:cover;}
+.jumbotron h1 {color:#FFF; margin-bottom:50px; font-size:32px;}
+.jumbotron p {color:#CCC; font-size:16px;}
+.jumbotron .input-lg { border:none; color:#CCC; height:44px;}
+.jumbotron .form-control {color:#333;}
+
+.priority span{background-size: 120px 60px; margin:-4px 10px -4px 0px;border:0px; display:block; width:30px; height:30px; float:left;}
+.priority .copy{width:500px; font-size:18px; font-weight:bold;}
+.priority p{margin-bottom:20px;}
+.priority #twitter span{background-image:url(../images/icons.png); }
+.priority #facebook span{background-image:url(../images/icons.png);background-position: -30px 0px;}
+.priority #email span{background-image:url(../images/icons.png);  background-position: -60px 0px;}
+.priority #linkedin span{background-image:url(../images/icons.png); background-position: -90px 0px;}
+
+.hostform{width:960px; margin:auto;}
+.tabs ul{margin:auto;}
+.tabs li{ width:220px; background:#F2f2f2; padding:20px; border-radius: 10 10 0 0; margin-right:10px; border:#CCC solid 1px; display:inline;}
+#activetab{background:#FFF; border-bottom:#FFF solid 1px;}
+.formbox {width:820px;  background-color:#FFF; border-radius:10px; border:#CCC solid 1px; margin: 18 auto; padding:60px 35px;}
+.leftColumn {width:360px;}
+.rightColumn {width:360px;}
+
+.exp-tease .container {width:960px;background-image:url(../images/teaseBg.jpg); background-size:960px 427px; background-repeat:no-repeat;margin:auto;padding:0 120px; background-position: 0 110}
+.tease{width:240px; float:left; text-align:center;}
+.profile{width:134px; height:134px; background-color:#FFF; border-radius: 70px; margin: 30px auto 10px auto;}
+.profile img{border-radius: 60px; margin-top:6px; border:#CCC solid 1px; width:120px; height:120;}
+.teasebox{width:180px; height:195px; background-size:180 195; background-repeat:no-repeat; margin:auto; padding:77px 9px 0px 9px; color:#999; font-size:13px;;}
+
+.book-tease{ background-image:url(../images/nighlights.jpg); background-repeat:no-repeat; background-size:cover;}
+.book-tease p {color:#ccc; font-size:16px; margin-bottom:30px;}
+
+.footer h1{color:#666;}
+.footer img{margin:30px 0px;}
+
+.footer span {width:30px; height:30px; background-size:120px 60px; display:block; margin: 0px -5px;}
+.footer #twitter span { background-image:url(../images/icons.png); background-position: 0px -30px;}
+.footer #facebook span{ background-image:url(../images/icons.png); background-position: -30px -30px;}
+.footer #linkedin span{ background-image:url(../images/icons.png); background-position: -90px -30px;}
+
+.navbar span {width:23px; height:23px; background-size:90 45; display:block;  margin: -2px -8px;}
+.navbar #twitter span { background-image:url(../images/icons.png); background-position: 0px -23px;}
+.navbar  #facebook span{ background-image:url(../images/icons.png); background-position: -23px -23px;}
+.navbar #linkedin span{ background-image:url(../images/icons.png); background-position: -68px -23px;}
+
+
+.footer .btn-default, .navbar  .btn-default{border-radius:50px}
+.footer, .jumbotron, .exp-tease, .book-tease, .priority{padding:100px 0px;}
+
+.nav-tabs > li, .nav-pills > li {
+    float:none;
+    display:inline-block;
+}
+
+.nav-tabs {
+    text-align:center;
+}

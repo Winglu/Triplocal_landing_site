@@ -1,0 +1,43 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* Move down content because we have a fixed navbar that is 50px tall */
+h1{font-family:Cutive; line-height:1.3; font-size:32px; color:#3cc;}
+h2{font-family:Cutive; line-height:1.3; font-size:24px; color:#3cc; margin-top:0px;}
+body{background-color:#f7f7f7;}
+.container {text-align: center; width:100%;}
+
+.navbar-inverse {background-color: #fff;border-color: #CCC;}
+.navbar {min-height: 60px; vertical-align: middle;}
+.navbar-right {padding-top: 7px;}
+
+.jumbotron { padding:100px 0; background-image:url(../images/beijing.jpg); background-repeat:no-repeat; background-size:cover;}
+.jumbotron h1 {color:#FFF; margin-bottom:50px; font-size:32px;}
+.jumbotron p {color:#fff; font-size:16px;}
+.jumbotron .input-lg { border:none; color:#CCC; height:44px;}
+.jumbotron .form-control {color:#333;}
+
+.btn-primary {background-color: #3cc;border-color: #399;}
+.btn-primary:hover {background-color: #399;border-color: #399;}
+
+
+.prelaunch-tease{ width:960px; height:500px; text-align:center; background-image:url(../images/teaseBg.jpg); background-size:960px 427px; background-repeat:no-repeat; margin:auto;padding:0 120px;}
+.tease{width:240px; float:left; text-align:center;}
+.profile{width:134px; height:134px; background-color:#FFF; border-radius: 70px; margin: 30px auto 10px auto;}
+.profile img{border-radius: 60px; margin-top:6px; border:#CCC solid 1px; width:120px; height:120;}
+.teasebox{width:180px; height:195px; background-size:180px 195px; background-repeat:no-repeat; margin:auto; padding:77px 9px 0px 9px; color:#999; font-size:13px;;}
+
+.book-tease{ background-image:url(../images/nighlights.jpg); background-repeat:no-repeat; background-size:cover;}
+
+
+
+
+.footer h1{color:#666;}
+.footer img{margin:30px 0px;}
+
+.footer span {width:30px; height:30px; background-size:120px 60px; display:block; margin: 0px -5px;}
+.footer #twitter span { background-image:url(../images/icons.png); background-position: 0px -30px;}
+.footer #facebook span{ background-image:url(../images/icons.png); background-position: -30px -30px;}
+.footer #linkedin span{ background-image:url(../images/icons.png); background-position: -90px -30px;}
+.footer .btn-default, .navbar  .btn-default{border-radius:50px}
+.footer, .jumbotron, .exp-tease, .book-tease, .priority{padding:100px 0px;}

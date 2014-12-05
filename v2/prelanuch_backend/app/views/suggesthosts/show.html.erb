@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @suggesthost.name %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @suggesthost.email %>
+</p>
+
+<%= link_to 'Edit', edit_suggesthost_path(@suggesthost) %> |
+<%= link_to 'Back', suggesthosts_path %>

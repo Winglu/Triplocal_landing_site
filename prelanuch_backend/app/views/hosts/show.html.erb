@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @host.email %>
+</p>
+
+<p>
+  <strong>Firstname:</strong>
+  <%= @host.firstName %>
+</p>
+
+<p>
+  <strong>Lastname:</strong>
+  <%= @host.lastName %>
+</p>
+
+<p>
+  <strong>Location:</strong>
+  <%= @host.location %>
+</p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @host.title %>
+</p>
+
+<p>
+  <strong>Des:</strong>
+  <%= @host.des %>
+</p>
+
+<p>
+  <strong>Perdes:</strong>
+  <%= @host.perDes %>
+</p>
+
+<%= link_to 'Edit', edit_host_path(@host) %> |
+<%= link_to 'Back', hosts_path %>
